@@ -1,0 +1,19 @@
+{
+  "name": "skewer",
+  "version": "1.0.0",
+  "description": "JSON schema editor",
+  "main": "skewer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanoneillcode/skewer.git"
+  },
+  "author": "sean",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seanoneillcode/skewer/issues"
+  },
+  "homepage": "https://github.com/seanoneillcode/skewer#readme"
+}
