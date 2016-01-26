@@ -8,6 +8,9 @@ function getHTML() {
 var Skewer = function Skewer(element, schema) {
     this.element = element;
     this.schema = schema;
+    // parse schema into object
+    // translate to data object
+    // build form component using data object
 };
 
 Skewer.prototype = {
