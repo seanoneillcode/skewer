@@ -11,8 +11,8 @@ var Skewer = function Skewer(element, schema) {
 };
 
 Skewer.prototype = {
-    constructor: Skewer
-    getHTML : getHTML;
+    constructor: Skewer,
+    getHTML : getHTML
 }
 
 module.exports = Skewer;
