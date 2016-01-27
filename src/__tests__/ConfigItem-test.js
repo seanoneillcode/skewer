@@ -8,9 +8,14 @@ var ConfigItem = require('../ConfigItem.jsx');
 describe('config item', function() {
   it('displays the correct text', function() {
     var configItem = ReactTestUtils.renderIntoDocument(
-      <ConfigItem />
+      <ConfigItem label="greeting" value="hello"/>
     );
     var configItemNode = ReactDOM.findDOMNode(configItem);
-    expect(configItemNode.textContent).toEqual('hello');
+    //console.log("configItemNode children", configItemNode.children);
+    expect(configItemNode.textContent).toEqual('greeting');
+
+    var input = ReactTestUtils.findRenderedDOMComponentWithTag(configItem, 'input');
+    //console.log("input ", input.value);
+    expect(input.value).toEqual('hello');
   });
 });
