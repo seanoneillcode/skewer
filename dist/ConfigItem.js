@@ -1,23 +1,27 @@
 "use strict";
 
-var React = require('react');
+var _react = require("react");
 
-module.exports = React.createClass({
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _react2.default.createClass({
     displayName: "exports",
 
     render: function render() {
-        return React.createElement(
+        return _react2.default.createElement(
             "div",
             { className: "configItem" },
-            React.createElement(
+            _react2.default.createElement(
                 "label",
                 { className: "col-sm-4 control-label col-sm-4" },
                 this.props.label
             ),
-            React.createElement(
+            _react2.default.createElement(
                 "div",
                 { className: "col-sm-6" },
-                React.createElement("input", { type: "text", onChange: this.props.onChange, className: "form-control", value: this.props.value })
+                _react2.default.createElement("input", { type: "text", onChange: this.props.onChange, className: "form-control", value: this.props.value })
             )
         );
     }
